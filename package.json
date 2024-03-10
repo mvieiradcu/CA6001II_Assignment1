@@ -1,0 +1,19 @@
+{
+  "name": "dcu-nft-marketplace",
+  "version": "1.0.0",
+  "author": "Marcio Vieira",
+  "license": "ISC",
+  "description": "DCU CA6001I – Developing Blockchain Systems Project 1 - NFT Marketplace",
+  "scripts": {
+    "compile": "npx truffle compile",
+    "deploy": "npx truffle migrate --network ganache --reset",
+    "publish": "npx truffle run verify Marketplace NFT --network ganache"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3",
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "i": "^0.3.7",
+    "truffle-plugin-verify": "^0.5.32",
+    "truffle-assertions": "^0.9.2"
+  }
+}
